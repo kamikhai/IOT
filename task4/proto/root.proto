@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "ru.itis.root";
+
+package root;
+
+service RootCalculator {
+  rpc calculate_root(Number) returns (Number) {}
+}
+
+message Number {
+  double value = 1;
+}
